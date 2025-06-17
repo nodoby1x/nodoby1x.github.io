@@ -1,0 +1,90 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #222;
+  --accent: #0077ff;
+  --section-padding: 80px 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+section {
+  padding: var(--section-padding);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+}
+
+.section-content {
+  margin-bottom: 40px;
+  color: var(--text)
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.item-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Scroll animation (optional) */
+.reveal {
+  opacity: 1;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
