@@ -3,64 +3,381 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Amnat Ditkammo - Portfolio</title>
+    <meta name="description" content="Full-Stack Developer | IoT Developer - Experienced in AI/ML, web development, and IoT solutions" />
+    <meta name="keywords" content="developer, programmer, IoT, AI, ML, web development, mobile development" />
+    <meta name="author" content="Amnat Ditkammo" />
   </head>
   <body>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+    
     <header>
+      <div class="profile-image">
+        <img src="assets/images/profile_image.jpg" alt="Amnat Ditkammo - Profile Picture" />
+      </div>
       <h1>Amnat Ditkammo</h1>
-      <p>Programmer | Software Developer</p>
+      <p>Full-Stack Developer | IoT Developer</p>
+      <div class="header-cta">
+        <a href="mailto:amnarj.dit@gmail.com" class="cta-button">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+      </div>
     </header>
 
     <section>
-      <h2>Personal Details</h2>
+      <h2><i class="fas fa-user"></i> About Me</h2>
       <div class="section-content reveal">
-        <p>Name: Amnat Ditkammo</p>
-        <p>Email: amnarj.dit@gmail.com</p>
-        <p>Location: Nakorn Pathom, Thailand</p>
+        <div class="about-card">
+          <div class="about-text">
+            <p>Passionate Programmer with 4+ years of experience in developing innovative solutions across web, mobile, and IoT platforms. Experience in AI/ML applications, with expertise in computer vision and deep learning models for industrial applications.</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>amnarj.dit@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nakorn Pathom, Thailand</span>
+              </div>
+              <!-- <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>Available on request</span>
+              </div> -->
+              <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <span><a href="https://www.linkedin.com/in/amnat-ditkammo-121a171a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h2>Education</h2>
+      <h2><i class="fas fa-code"></i> Technical Skills</h2>
       <div class="section-content reveal">
-        <div class="item">
-          <div class="item-title">Bachelor of Instrumentation System Engineering</div>
-          <div class="item-subtitle">King Mongkut's University Of Technology North Bangkok, </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+              <!-- <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>Kotlin</span>
+              </div> -->
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Web Technologies</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>AI/ML & Data</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-brain"></i>
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-robot"></i>
+                <span>PyTorch</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-eye"></i>
+                <span>OpenCV</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <span>YOLO/U-NET</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Mobile & IoT</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-android"></i>
+                <span>Android</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-apple"></i>
+                <span>iOS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-microchip"></i>
+                <span>IoT Systems</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-gauge"></i>
+                <span>Dashboard</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Database & Cloud</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-cloud"></i>
+                <span>Google Cloud</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Technologies</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fa-solid fa-mosquito"></i>
+                <span>MQTT</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-horse-head"></i>
+                <span>Ollama</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-tower-cell"></i>
+                <span>LoRa</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-robot"></i>
+                <span>n8n</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Job Experience</h2>
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
       <div class="section-content reveal">
-        <div class="item">
-          <div class="item-title">Programmer</div>
-          <div class="item-subtitle">Forth EMS Public Company | 2022–Present</div>
-          <p>Developed Web application MES report</p>
-          <p>Developed application (Android) for Vending machine</p>
-          <p>Developed Application Support Production</p>
-          <p>Design and Developed ESG Carbon Tracking</p>
-          <p>Design and Developed IoT System Temp/Humid, Dashboard, Web Report </p>
-          <p>Design and Developed Deep Learning Model to inspect PCB Defects (YOLO)</p>
-          <p>Design and Developed Deep Learning Model to Inspect PCB Defects (U-NET)</p>
-        </div>
-        <div class="item">
-          <div class="item-title">Business Owner</div>
-          <div class="item-subtitle">Plants and Gadening shop | 2020–2022</div>
-          <p>Plant, Gardening and accessories.</p>
-        </div>
-        <div class="item">
-          <div class="item-title">Programmer</div>
-          <div class="item-subtitle">CDG Systems | 2018–2020</div>
-          <p>Developed a module image processing and OCR on mobile application.</p>
-          <p>Android and iOS</p>
+        <div class="item education-item">
+          <div class="item-header">
+            <div class="item-title">Bachelor of Instrumentation System Engineering</div>
+            <div class="item-date">2014-2018</div>
+          </div>
+          <div class="item-subtitle">King Mongkut's University Of Technology North Bangkok</div>
+          <div class="item-description">
+            <p>Study in automation systems, control engineering, and instrumentation technology</p>
+            <p>Relevant coursework: Embedded Systems, Signal Processing, Industrial Automation</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer>&copy; 2025 Amnat. All rights reserved.</footer>
+    <section>
+      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+      <div class="section-content reveal">
+        <div class="item experience-item">
+          <div class="item-header">
+            <div class="item-title">Associated Programmer</div>
+            <div class="item-date">2022–Present</div>
+          </div>
+          <div class="item-subtitle">
+            <i class="fas fa-building"></i> Forth EMS Public Company
+          </div>
+          <div class="item-description">
+            <p><strong>AI/ML Development:</strong> Designed and implemented deep learning models for PCB defect inspection using YOLO and U-NET architectures, achieving 90% accuracy in production environments</p>
+            <p><strong>Full-Stack Development:</strong> Built comprehensive MES reporting systems and production support applications using modern web technologies</p>
+            <p><strong>Mobile Development:</strong> Developed Android applications for vending machine management and control systems</p>
+            <p><strong>IoT Solutions:</strong> Created end-to-end IoT systems for temperature/humidity monitoring with real-time dashboards and automated reporting</p>
+            <p><strong>Sustainability Tech:</strong> Designed and developed ESG Carbon Tracking system for environmental compliance and reporting</p>
+            <p><strong>Improvements:</strong> Designed and developed Windows application to decrease working time in production line </p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Android</span>
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Full-Stack</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+        </div>
+        
+        <div class="item experience-item">
+          <div class="item-header">
+            <div class="item-title">Entrepreneur & Business Owner</div>
+            <div class="item-date">2020–2022</div>
+          </div>
+          <div class="item-subtitle">
+            <i class="fas fa-seedling"></i> Plants and Gardening Shop
+          </div>
+          <div class="item-description">
+            <p><strong>Business Management:</strong> Successfully managed retail operations specializing in plants, gardening supplies, and accessories</p>
+            <p><strong>Customer Service:</strong> Built strong customer relationships and provided expert gardening consultation</p>
+            <p><strong>Inventory Management:</strong> Optimized supply chain and inventory systems for seasonal products</p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Business Management</span>
+            <span class="tech-tag">Customer Service</span>
+            <span class="tech-tag">Retail Operations</span>
+          </div>
+        </div>
+        
+        <div class="item experience-item">
+          <div class="item-header">
+            <div class="item-title">Mobile Application Developer</div>
+            <div class="item-date">2018–2020</div>
+          </div>
+          <div class="item-subtitle">
+            <i class="fas fa-mobile-alt"></i> CDG Systems
+          </div>
+          <div class="item-description">
+            <p><strong>Computer Vision:</strong> Developed advanced image processing modules and OCR systems for mobile applications</p>
+            <p><strong>Cross-Platform Development:</strong> Built and maintained applications for both Android and iOS platforms</p>
+            <p><strong>API Integration:</strong> Implemented seamless integration with backend services and third-party APIs</p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">Android</span>
+            <span class="tech-tag">iOS</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">OCR</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="index.js" type="script/text"></script>
+    <section>
+      <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+      <div class="section-content reveal">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>AI-Powered PCB Defect Detection</h3>
+              <div class="project-type">Deep Learning</div>
+            </div>
+            <div class="project-description">
+              <p>Developed computer vision models using YOLO and U-NET architectures to automatically detect and classify PCB manufacturing defects, reducing manual inspection time by 80%.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">YOLO</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-bullseye"></i>
+                <span>90% Accuracy</span>
+              </div>
+              <!-- <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>80% Time Saved</span>
+              </div> -->
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>IoT Environmental Monitoring System</h3>
+              <div class="project-type">IoT & Web</div>
+            </div>
+            <div class="project-description">
+              <p>Built a comprehensive IoT system for real-time temperature and humidity monitoring with web dashboard, automated alerts, and historical data analytics.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Nextjs</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Dashboard</span>
+              <span class="tech-tag">MQTT</span>
+              <span class="tech-tag">LoRa</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-thermometer-half"></i>
+                <span>Real-time Monitoring</span>
+              </div>
+              <!-- <div class="stat">
+                <i class="fas fa-chart-line"></i>
+                <span>Analytics Dashboard</span>
+              </div> -->
+              <div class="stat">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Alert Notification</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>ESG Carbon Tracking Platform</h3>
+              <div class="project-type">Web Application</div>
+            </div>
+            <div class="project-description">
+              <p>Designed and developed a comprehensive platform for tracking and reporting carbon emissions to support corporate ESG compliance and sustainability goals.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Nodejs</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Google Cloud</span>
+            </div>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-leaf"></i>
+                <span>Sustainability Focus</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-chart-bar"></i>
+                <span>Compliance Reports</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Amnat Ditkammo. All rights reserved.</footer>
+
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
